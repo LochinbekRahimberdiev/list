@@ -31,3 +31,37 @@ class LinkedList:
         new_node = Node(new_data)
         new_node.next = self.head
         self.head = new_node
+
+
+# LinkedList obyektini yaratish
+llist = LinkedList()
+
+# .append() metodiga misollar
+llist.append(6)
+llist.append(7)
+llist.append(8)
+llist.append(9)
+llist.append(10)
+
+# .printList() metodiga misollar
+llist.printList()
+
+# .push() metodiga misollar
+llist.push(5)
+llist.push(4)
+llist.push(3)
+llist.push(2)
+llist.push(1)
+
+# .printList() metodiga misollar
+llist.printList()
+
+# .insert() metodiga misollar
+llist.insert(llist.head.next, 15)
+llist.insert(llist.head.next.next, 20)
+llist.insert(llist.head.next.next.next, 25)
+llist.insert(llist.head.next.next.next.next, 30)
+llist.insert(llist.head.next.next.next.next.next, 35)
+
+# .printList() metodiga misollar
+llist.printList()
